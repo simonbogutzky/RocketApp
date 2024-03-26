@@ -26,7 +26,7 @@ public struct ImageView: View {
 
     // MARK: - Initializers
 
-    public init(imageName: String, 
+    public init(imageName: String,
                 caption: LocalizedStringKey,
                 bundle: Bundle? = nil) {
         self.imageName = imageName

@@ -6,18 +6,18 @@ import PackageDescription
 let package = Package(
     name: "FeaturePackage",
     platforms: [
-        .iOS(.v17),
+        .iOS(.v17)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "FeaturePackage",
             targets: ["FeaturePackage"]
-        ),
+        )
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(path: "/Users/simonbogutzky/Xcode/Projects/Simon Bogutzky/Own/RocketApp/ComponentPackage"),
+        .package(path: "/Users/simonbogutzky/Xcode/Projects/Simon Bogutzky/Own/RocketApp/ComponentPackage")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -27,6 +27,6 @@ let package = Package(
             dependencies: [
                 .product(name: "ComponentPackage", package: "ComponentPackage"),
             ]
-        ),
+        )
     ]
 )
